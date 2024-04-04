@@ -11,3 +11,4 @@ console.log(`My fullname is ${firstname} ${lastname}.`); // My full name is tavi
 // template litrals also works with expressions
 
 console.log(`1+4=${1+4}`);  //  5=5
+
