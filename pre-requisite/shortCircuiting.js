@@ -1,4 +1,4 @@
-// && - and 
+// && - and  
 
 let a = 7==8 &&  true // in the case of && if output of first expression is false it will short circuit. It won't evaluate second part.  																	
 console.log(a)
