@@ -19,4 +19,8 @@ let info4 =
     ]
 
 
-console.log(info4[0]?.paren?.father)
+console.log(info4[0])
+console.log(info4[1].parent.father)
+console.log(info4[0].parent.mother)
+
+console.log(info4[0]?.parent?.father)
