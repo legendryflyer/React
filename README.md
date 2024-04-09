@@ -12,22 +12,6 @@ Learn Once, Write Anywhere: We don't make assumptions about the rest of your tec
 
 
 
-react components build user interface  - true.
-
-react component will have logic apperance and data  - true.
-
-components can communicate with each other by sending data - true.
-
-components can be nested and data can be pass accross each using props - true.
 
 
 
-
-
-#how to build basic react app ???
-
-npx create-react-app my-app
-
-cd my-app
-
-npm start
