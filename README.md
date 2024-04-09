@@ -27,5 +27,7 @@ components can be nested and data can be pass accross each using props - true.
 #how to build basic react app ???
 
 npx create-react-app my-app
+
 cd my-app
+
 npm start
