@@ -1,6 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+let data = [{
+  name: "pizza spinach",
+  price: 120,
+  size: "medium"
+},
+{
+  name: "pizza margherita",
+  price: 85,
+  size: "small"
+},
+{
+  name: "calzone",
+  price: 65,
+  size: "large"
+}]
+
 
 function App() {
   return (
@@ -23,7 +39,23 @@ function Header() {
 }
 
 function Menu() {
-  return (<h4>manu</h4>)
+  return (
+    <>
+      <h4>manu</h4>
+      <Pizza/>
+    </>
+  )
+}
+
+function Pizza() {
+  let style = { color: 'red', backgroundColor: 'yellow' }
+  return (
+    <div>
+      <p style={style}>I love pizza! </p>
+      <p style={style}>{data[0].price}</p>
+      <p style={style}>{data[0].size}</p>
+    </div>
+  )
 }
 
 function Footer() {
