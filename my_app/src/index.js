@@ -28,7 +28,7 @@ const pizzaData = [
   {
     name: "Pizza Funghi",
     ingredients: "Tomato, mozarella, mushrooms, and onion",
-    price: '12',
+    price: '12€',
     photoName: "images/funghi.jpg",
     soldOut: false,
   },
@@ -65,7 +65,9 @@ function Menu() {
   return (
     <>
       <div className='menu'>
-        <ul>
+        <h2>Choose your Pizza</h2>
+        <p>Authentic Italian cuisine. 6 creative dishes to choose from. All from our stone oven, all organic, all delicious.</p>
+        <ul className='pizzas'>
           {pizzas.map((pizza)=>(<Pizza pizzaObj = {pizza}/>))}
         </ul>
       </div> 
@@ -73,7 +75,7 @@ function Menu() {
   );
 }
 
-function Pizza(props) {
+function Pizza({pizzaObj}) {
   return (
     <>
       {/* <div>
@@ -81,12 +83,14 @@ function Pizza(props) {
         <h2>Focaccia with mozzarella and basil.</h2>
         <p>15 €</p>
       </div> */}
-      <li>
-            <h1>{props.pizzaObj.name}</h1>
-            <p>{props.pizzaObj.ingredients}</p>
-            <p>{props.pizzaObj.price}</p>
-            <p>{props.pizzaObj.soldOut}</p>
-            <img src={props.pizzaObj.photoName}></img>   
+      <li className={`pizza ${pizzaObj.soldOut}?"sold-out": ""`} >
+        <img src={pizzaObj.photoName} alt={pizzaObj.name} srcset={pizzaObj.name} />
+        <div>
+          <h3>{pizzaObj.name}</h3>
+          <p>{pizzaObj.ingredients}</p>
+          <span>{pizzaObj.soldOut ? "SOLD OUT" : pizzaObj.price}</span>
+        </div>
+
       </li>
     </>
   );
