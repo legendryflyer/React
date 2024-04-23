@@ -8,7 +8,7 @@ const pizzaData = [
     name: "Focaccia",
     ingredients: "Bread with italian olive oil and rosemary",
     price: '6€',
-    photoName: "images/focaccia.jpg",
+    photoName: "images\focaccia.jpg",
     soldOut: false,
   },
   {
@@ -106,6 +106,15 @@ function Header() {
   );
 }
 
+
+function Order({closeHour,openHour}){
+  return(
+  <>
+    <p>We are open from {openHour}:00 to {closeHour}:00 today!</p>
+  </>
+  )
+}
+
 function Footer() {
   const hour = new Date().getHours()+5
   const openHour = 12
@@ -113,13 +122,7 @@ function Footer() {
   const isOpen = hour >= openHour && hour  <= closeHour
   console.log(isOpen)
 
-  function Order({closeHour,openHour}){
-    return(
-    <>
-      <p>We are open from {openHour}:00 to {closeHour}:00 today!</p>
-    </>
-    )
-  }
+
   return (
     <>
       <footer className='footer'>pizzaRia-(since_2024)
