@@ -8,7 +8,7 @@ const pizzaData = [
     name: "Focaccia",
     ingredients: "Bread with italian olive oil and rosemary",
     price: '6€',
-    photoName: "images\focaccia.jpg",
+    photoName: "images/focaccia.jpg",
     soldOut: false,
   },
   {
@@ -61,14 +61,14 @@ function App() {
 
 function Menu() {
   const pizzas = pizzaData
-  const numPizza = pizzas.length
+  // const numPizza = pizzas.length
   return (
     <>
       <div className='menu'>
         <h2>Choose your Pizza</h2>
         <p>Authentic Italian cuisine. 6 creative dishes to choose from. All from our stone oven, all organic, all delicious.</p>
         <ul className='pizzas'>
-          {pizzas.map((pizza)=>(<Pizza pizzaObj = {pizza}/>))}
+          {pizzas.map((pizza)=>(<Pizza pizzaObj = {pizza} key={pizza.name}/>))}
         </ul>
       </div> 
     </>
@@ -84,7 +84,7 @@ function Pizza({pizzaObj}) {
         <p>15 €</p>
       </div> */}
       <li className={`pizza ${pizzaObj.soldOut}?"sold-out": ""`} >
-        <img src={pizzaObj.photoName} alt={pizzaObj.name} srcset={pizzaObj.name} />
+        <img src={pizzaObj.photoName} alt={pizzaObj.name} />
         <div>
           <h3>{pizzaObj.name}</h3>
           <p>{pizzaObj.ingredients}</p>
@@ -120,7 +120,7 @@ function Footer() {
   const openHour = 12
   const closeHour = 22
   const isOpen = hour >= openHour && hour  <= closeHour
-  console.log(isOpen)
+  // console.log(isOpen)
 
 
   return (
