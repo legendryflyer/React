@@ -1,13 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import ClassComponant from "./componants/ClassComponant";
+import ClassOne from "./componants/ClassOne";
+import ClassOneS from "./componants/ClassOneS";
+import CounterC from "./componants/CounterC";
+import CounterF from "./componants/CounterF";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
+    <ClassComponant />
+    <ClassOne />
+    <ClassOneS />
+    {/* <CounterC /> */}
+    <CounterF />
   </React.StrictMode>
 );
 

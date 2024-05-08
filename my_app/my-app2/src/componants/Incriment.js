@@ -8,7 +8,7 @@ export default function Counter() {
 
    console.log(count) 
   };
-  
+
   const decreaseCount = () => {
     setCount(count - 1);
 
@@ -23,5 +23,7 @@ export default function Counter() {
     </div>
   );
 }
+
+
 
 
