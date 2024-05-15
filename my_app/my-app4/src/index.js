@@ -9,7 +9,9 @@ import reportWebVitals from "./reportWebVitals";
 // import CounterC from "./componants/CounterC";
 // import CounterF from "./componants/CounterF";
 // import CounterObj from "./componants/CounterObj";
-import CounterObjClass from "./componants/CounterObjClass";
+// import CounterObjClass from "./componants/CounterObjClass";
+// import CounterHooksF from "./componants/CounterHooksF";
+import CounterHooksC from "./componants/CounterHooksC";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,7 +23,9 @@ root.render(
     <CounterC />
     <CounterF /> */}
     {/* <CounterObj /> */}
-    <CounterObjClass />
+    {/* <CounterObjClass /> */}
+    {/* <CounterHooksF /> */}
+    <CounterHooksC />
   </React.StrictMode>
 );
 
