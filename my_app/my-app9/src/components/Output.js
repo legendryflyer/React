@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function Output() {
+export default function Output({ bill, tip }) {
   return (
     <div>
-      <h3>You pay $X and $tip</h3>;
+      <h3>
+        You pay ${bill + tip} and (${bill}+${tip}tip)
+      </h3>
     </div>
   );
 }

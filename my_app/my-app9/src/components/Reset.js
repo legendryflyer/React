@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Reset() {
+export default function Reset({ onReset }) {
   return (
     <div>
-      <button>Reset</button>
+      <button onClick={onReset}>Reset</button>
     </div>
   );
 }
