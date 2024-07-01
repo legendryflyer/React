@@ -20,7 +20,8 @@ let q14 = 7 == 5 || 8 == 9;
 console.log(q13);
 console.log(q14);
 
-// nullish coalescing operator
+// nullish coalescing operator   /// if the first expression is null and undefined then it will go for the second expression..
+
 console.log(null ?? 10);
 console.log(undefined ?? 10);
 console.log(0 ?? 10); // 0 is falsy value
