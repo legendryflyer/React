@@ -39,7 +39,7 @@ const App7 = () => {
                         type='text'
                         name='username'
                         value={state.username}
-                        onChange={(e)=>dispatch({type:setUserName,payload:e.target.value})}
+                        onChange={(e)=>dispatch({type:"setUserName",payload:e.target.value})}
                     />
                 </label>
             </div>
